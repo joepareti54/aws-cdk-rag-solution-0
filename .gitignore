@@ -1,0 +1,55 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- AWS CDK ----
+cdk.out/
+cdk.context.json
+.cdk.staging/
+
+# ---- Environment / secrets ----
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ---- IDE / editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Project-specific runtime artifacts ----
+response.json
+*.log
+
+# ---- Datasets (large local data, not for repo) ----
+datasets/
+*.pdf
+
+# ---- Lambda layer build artifacts ----
+# Keep requirements.txt, ignore installed packages
+layers/dependencies/python/
+layers/dependencies/*.zip
+
+# ---- OS / misc ----
+*.bak
+*.tmp

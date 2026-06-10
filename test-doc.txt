@@ -1,0 +1,1 @@
+Amazon Bedrock is a fully managed service that offers foundation models from leading AI companies. It provides access to models from Anthropic, AI21 Labs, Stability AI, and Amazon. You can use it for text generation, summarization, and embeddings.
