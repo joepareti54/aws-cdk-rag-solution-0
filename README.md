@@ -70,7 +70,7 @@ All AWS resources are provisioned with AWS CDK.
 
 ### 1. Clone and create a virtual environment
 
-    git clone https://github.com/joepareti54/rag-solution.git
+    git clone https://github.com/joepareti54/aws-cdk-rag-solution-0.git
     cd rag-solution
 
     python -m venv .venv
