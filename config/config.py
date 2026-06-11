@@ -24,8 +24,8 @@ class ChunkingConfig:
 class FAISSConfig:
     index_file: str = "faiss_index.bin"
     metadata_file: str = "metadata.json"
-    index_type: str = "IVFFlat"
-    nlist: int = 100
+    index_type: str = "IVFFlatIP"
+#    nlist: int = 100
 
 @dataclass
 class RAGConfig:
