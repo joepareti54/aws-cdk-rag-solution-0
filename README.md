@@ -26,7 +26,7 @@ All AWS resources are provisioned with AWS CDK.
 - **API**: Amazon API Gateway (REST, API key auth)
 - **Storage**: Amazon S3
 - **Embeddings**: Amazon Bedrock - amazon.titan-embed-text-v2:0 (1024-dim)
-- **LLM**: Amazon Bedrock - us.anthropic.claude-sonnet-4-5-20240929-v1:0
+- **LLM**: Amazon Bedrock - us.anthropic.claude-sonnet-4-5-20250929-v1:0
 - **Vector search**: FAISS (IndexFlatIP)
 
 ---
