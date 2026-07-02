@@ -61,7 +61,7 @@ All AWS resources are provisioned with AWS CDK.
 - AWS account with Bedrock model access enabled for Titan Embeddings v2 and Claude 3 Sonnet
 - AWS CLI configured (aws configure)
 - Node.js (for the AWS CDK CLI)
-- Python 3.11+
+- Python 3.9
 - AWS CDK v2 (npm install -g aws-cdk)
 
 ---
