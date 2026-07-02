@@ -12,8 +12,8 @@ The pipeline has four stages:
 
 1. **Upload** — A local script pushes PDF documents to an S3 bucket.
 2. **Process** — An S3 event triggers the `document_processor` Lambda, which extracts text, splits it into chunks (1000 chars, 200 overlap), generates embeddings via Bedrock Titan, and writes chunk metadata back to S3.
-3. **Index** — The `index_manager` Lambda builds a FAISS IVFFlat index from the embeddings and stores the index file in S3.
-4. **Query** — A user POSTs a question to API Gateway. The `query_handler` Lambda loads the FAISS index, retrieves the top-k relevant chunks, builds a prompt, and calls Claude 3 Sonnet via Bedrock to generate the answer.
+3. **Index** — The `index_manager` Lambda builds a FAISS IndexFlatIP index from the embeddings and stores the index file in S3.
+4. **Query** — A user POSTs a question to API Gateway. The `query_handler` Lambda loads the FAISS index, retrieves the top-k relevant chunks, builds a prompt, and calls Claude 4.5 Sonnet via Bedrock to generate the answer.
 
 All AWS resources are provisioned with AWS CDK.
 
@@ -26,8 +26,8 @@ All AWS resources are provisioned with AWS CDK.
 - **API**: Amazon API Gateway (REST, API key auth)
 - **Storage**: Amazon S3
 - **Embeddings**: Amazon Bedrock - amazon.titan-embed-text-v2:0 (1024-dim)
-- **LLM**: Amazon Bedrock - anthropic.claude-3-sonnet-20240229-v1:0
-- **Vector search**: FAISS (IVFFlat, nlist=100)
+- **LLM**: Amazon Bedrock - anthropic.claude-4.5-sonnet-20240229-v1:0
+- **Vector search**: FAISS (IndexFlatIP)
 
 ---
 
