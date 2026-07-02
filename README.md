@@ -22,7 +22,7 @@ All AWS resources are provisioned with AWS CDK.
 ## Tech Stack
 
 - **IaC**: AWS CDK (Python)
-- **Compute**: AWS Lambda (Python 3.11)
+- **Compute**: AWS Lambda (Python 3.9)
 - **API**: Amazon API Gateway (REST, API key auth)
 - **Storage**: Amazon S3
 - **Embeddings**: Amazon Bedrock - amazon.titan-embed-text-v2:0 (1024-dim)
