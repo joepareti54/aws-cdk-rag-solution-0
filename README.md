@@ -26,7 +26,7 @@ All AWS resources are provisioned with AWS CDK.
 - **API**: Amazon API Gateway (REST, API key auth)
 - **Storage**: Amazon S3
 - **Embeddings**: Amazon Bedrock - amazon.titan-embed-text-v2:0 (1024-dim)
-- **LLM**: Amazon Bedrock - us.anthropic.claude-4.5-sonnet-20240929-v1:0
+- **LLM**: Amazon Bedrock - us.anthropic.claude-sonnet-4-5-20240929-v1:0
 - **Vector search**: FAISS (IndexFlatIP)
 
 ---
@@ -71,7 +71,7 @@ All AWS resources are provisioned with AWS CDK.
 ### 1. Clone and create a virtual environment
 
     git clone https://github.com/joepareti54/aws-cdk-rag-solution-0.git
-    cd rag-solution-0
+    cd aws-cdk-rag-solution-0
 
     python -m venv .venv
     source .venv/bin/activate
@@ -129,7 +129,7 @@ The response contains the generated answer and the source chunks used.
 All tunable parameters live in config/config.py:
 
 - Chunking: chunk_size=1000, chunk_overlap=200
-- FAISS: IVFFlat index with nlist=100
+- FAISS: IndexFlatIP (exact inner-product search on L2-normalised vectors)
 - Lambda memory/timeout: per-function settings
 - Model IDs: embedding and LLM model IDs
 
