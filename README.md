@@ -121,10 +121,10 @@ You need three values to call the API:
 - `<your-api-key>` — the API key **value** (not the ID). Retrieve it with the `aws apigateway get-api-key` command shown in Setup step 5.
 
 
-    curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/query \
+    `curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/query \
       -H "Content-Type: application/json" \
       -H "x-api-key: <your-api-key>" \
-      -d '{"query": "What was the revenue trend in 2023?"}'
+      -d '{"query": "What was the revenue trend in 2023?"}'`
 
 The response contains the generated answer and the source chunks used.
 
