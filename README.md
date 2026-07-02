@@ -26,7 +26,7 @@ All AWS resources are provisioned with AWS CDK.
 - **API**: Amazon API Gateway (REST, API key auth)
 - **Storage**: Amazon S3
 - **Embeddings**: Amazon Bedrock - amazon.titan-embed-text-v2:0 (1024-dim)
-- **LLM**: Amazon Bedrock - anthropic.claude-4.5-sonnet-20240229-v1:0
+- **LLM**: Amazon Bedrock - us.anthropic.claude-4.5-sonnet-20240929-v1:0
 - **Vector search**: FAISS (IndexFlatIP)
 
 ---
@@ -58,7 +58,7 @@ All AWS resources are provisioned with AWS CDK.
 
 ## Prerequisites
 
-- AWS account with Bedrock model access enabled for Titan Embeddings v2 and Claude 3 Sonnet
+- AWS account with Bedrock model access enabled for Titan Embeddings v2 and Claude Sonnet 4.5
 - AWS CLI configured (aws configure)
 - Node.js (for the AWS CDK CLI)
 - Python 3.9
@@ -71,7 +71,7 @@ All AWS resources are provisioned with AWS CDK.
 ### 1. Clone and create a virtual environment
 
     git clone https://github.com/joepareti54/aws-cdk-rag-solution-0.git
-    cd rag-solution
+    cd rag-solution-0
 
     python -m venv .venv
     source .venv/bin/activate
