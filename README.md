@@ -117,8 +117,8 @@ This script uploads the PDF corpus year by year. Each upload to S3 automatically
 
 You need three values to call the API:
 
-- <api-id> and <region> — read from the ApiEndpoint output printed by cdk deploy. The full endpoint URL has the form https://<api-id>.execute-api.<region>.amazonaws.com/prod/query, so you can just paste that URL directly instead of substituting the two placeholders.
-- <your-api-key> — the API key value (not the ID). Retrieve it with the aws apigateway get-api-key command shown in Setup step 5.
+- `<api-id>` and `<region>` — read from the `ApiEndpoint` output printed by `cdk deploy`. The full endpoint URL has the form `https://<api-id>.execute-api.<region>.amazonaws.com/prod/query`, so you can just paste that URL directly instead of substituting the two placeholders.
+- `<your-api-key>` — the API key **value** (not the ID). Retrieve it with the `aws apigateway get-api-key` command shown in Setup step 5.
 
 
     curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/query \
