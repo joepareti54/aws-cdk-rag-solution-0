@@ -37,7 +37,9 @@ class RAGStack(Stack):
             "BUCKET_NAME": self.bucket.bucket_name,
             "EMBEDDING_MODEL_ID": "amazon.titan-embed-text-v2:0",
 #            "LLM_MODEL_ID": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
-            "LLM_MODEL_ID": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+#            "LLM_MODEL_ID": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+#            "LLM_MODEL_ID": "us.anthropic.claude-sonnet-4-6",
+            "LLM_MODEL_ID": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
             "INDEX_PREFIX": "faiss-index/",
         }
 
